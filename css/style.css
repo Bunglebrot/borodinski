@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-display: swap;
+  src: local('PT Sans'), url('../fonts/web/ptsansnarrow.woff2') format('woff2'), url('../fonts/web/ptsansnarrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-display: swap;
+  src: local('PT Sans'), url('../fonts/web/ptsansnarrowbold.woff2') format('woff2'), url('../fonts/web/ptsansnarrowbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'PT Sans';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* HEADER */
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__link {
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #212121;
+}
+
+.visuallu-hidden {
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
