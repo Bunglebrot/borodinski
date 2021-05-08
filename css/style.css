@@ -19,11 +19,13 @@
 }
 
 body {
-  background: #000000;
-  color: #ffffff;
-  font-family: 'PT Sans';
+  line-height: 24px;
   font-size: 14px;
+  font-family: 'PT Sans';
+  color: #ffffff;
   text-transform: uppercase;
+
+  background: #000000;
 }
 
 a {
@@ -31,13 +33,78 @@ a {
   color: #ffffff;
 }
 
-/* HEADER */
-.navigation__list {
+ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  text-transform: initial;
+}
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
 .navigation__link {
   font-size: 16px;
+}
+
+.header__btn-sign-in {
+  font-size: 16px;
+}
+
+/* ADVANTAGES */
+.advantages__header {
+  color: #f7f4f1;
+}
+
+.advantages__text {
+  color: #f7f4f1;
+  font-weight: 700;
+}
+
+/* NEWS & GALLERY */
+.news {
+
+}
+
+.news .header {
+  color: #000000;
+}
+
+.news-item__text {
+  color: #000000;
+  font-weight: 700;
+}
+
+.news-item__date {
+  color: #000000;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.gallery .header {
+  color: #000000;
+}
+
+/* CONTACTS & FORM SECTION */
+.contacts .header {
+  color: #000000;
+}
+
+.contacts__text {
+  color: #000000;
+  font-weight: 700;
+}
+
+.form-section .header {
+  color: #000000;
+}
+
+.form-section__text {
+  color: #000000;
+  font-weight: 700;
 }
 
 /* FOOTER */
@@ -45,7 +112,49 @@ a {
   background-color: #212121;
 }
 
-.visuallu-hidden {
+.footer__text {
+  font-weight: 700;
+  margin: 0;
+}
+
+.wrapper_bg-light {
+  background-color: #ffffff;
+}
+
+/* PERSONAL ACCOUNT & MAP BLOCK */
+.personal-account {
+  display: none;
+}
+
+.map-block {
+  display: none;
+}
+
+/* TEXTS SIZES */
+.header {
+  font-size: 30px;
+}
+
+.middle-header {
+  font-size: 24px;
+}
+
+.small-header {
+  font-size: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #000000;
+}
+
+.visually-hidden {
   position: absolute;
 	width: 1px;
 	height: 1px;
