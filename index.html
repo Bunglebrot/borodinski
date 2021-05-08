@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <a>
-      <img src="" alt="Логотип Барбершопа «Бородинский»">
+      <img src="./img/svg/index-logo.svg" alt="Логотип Барбершопа «Бородинский»" width="371" height="155">
     </a>
-    <nav class="navigation">
+    <nav class="header__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link">информация</a></li>
         <li class="navigation__item"><a class="navigation__link" href="./news.html">новости</a></li>
@@ -22,79 +22,82 @@
         <li class="navigation__item"><a class="navigation__link" href="./contact.html">контакты</a></li>
       </ul>
     </nav>
-    <button type="button">вход</button>
+    <button class="btn header__btn-sign-in" type="button">вход</button>
   </header>
 
   <main>
-    <h1>Барбершоп «Бородинский»</h1>
+    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
-    <section>
-      <h2>Преимущества</h2>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul>
         <li>
-          <h3>быстро</h3>
-          <p>мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          <h3 class="advantages__header header">быстро</h3>
+          <p class="advantages__text">мы делаем свою работу быстро! два часа пролетят незаметно и вы – счастливый обладатель стильной стрижки-минутки!</p>
         </li>
         <li>
-          <h3>круто</h3>
-          <p>забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
+          <h3 class="advantages__header header">круто</h3>
+          <p class="advantages__text">забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
         </li>
         <li>
-          <h3>дорого</h3>
-          <p>наши мастера — профессионалы своего дела и не могут стоить дёшево. к тому же, разве цена не даёт определённый статус?</p>
+          <h3 class="advantages__header header">дорого</h3>
+          <p class="advantages__text">наши мастера – профессионалы своего дела и не могут стоить дёшево. к тому же, разве цена не даёт определённый статус?</p>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>новости</h2>
-      <ul>
-        <li>
-          <p>нам наконец завезли ягермейстер! теперь вы можете пропустить стаканчик во время стрижки</p>
-          <time datetime="2021-01-11">11 января</time>
+    <div class="wrapper_bg-light">
+    <section class="news">
+      <h2 class="header">новости</h2>
+      <ul class="news__list">
+        <li class="news__item news-item">
+          <p class="news-item__text">нам наконец завезли ягермейстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+          <time class="news-item__date" datetime="2021-01-11">11 января</time>
         </li>
-        <li>
-          <p>в нашей команде пополнение, борис «бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-          <time datetime="2021-01-18">18 января</time>
+        <li class="news__item news-item">
+          <p class="news-item__text">в нашей команде пополнение, борис «бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+          <time class="news-item__date" datetime="2021-01-18">18 января</time>
         </li>
       </ul>
-      <a href="news.html">все новости</a>
+      <a class="btn" href="news.html">все новости</a>
     </section>
 
-    <section>
-      <h2>фотогалерея</h2>
+    <section class="gallery">
+      <h2 class="header">фотогалерея</h2>
       <a href="#">
         <img src="./img/studio.jpg" alt="интерьер" width="286" height="164">
       </a>
-      <button type="button">назад</button>
-      <button type="button">вперёд</button>
+      <button class="btn" type="button">назад</button>
+      <button class="btn" type="button">вперёд</button>
     </section>
-
-    <section>
-      <h2>контактная информация</h2>
-      <p>
+    </div>
+    <div class="wrapper_bg-light">
+    <section class="contacts">
+      <h2 class="header">контактная информация</h2>
+      <p class="contacts__text">
         Барбершоп «Бородинский»<br>
         адрес: г. Санкт-Петербург, б. конюшенная, д. 19/8<br>
         телефон: +7 (495) 666-02-66
       </p>
-      <p>
+      <p class="contacts__text">
         время работы<br>
         пн-пт: с 10:00 до 22:00<br>
         сб-вс: с 10:00 до 19:00
       </p>
-      <button type="button">как проехать</button>
-      <button type="button">обратная связь</button>
+      <button class="btn" type="button">как проехать</button>
+      <button class="btn" type="button">обратная связь</button>
     </section>
 
-    <section>
-      <h2>записаться</h2>
-      <p>укажите желаемую дату и время и мы свяжемся с вами для подтвеждения брони</p>
+    <section class="form-section">
+      <h2 class="header">записаться</h2>
+      <p class="form-section__text">укажите желаемую дату и время и мы свяжемся с вами для подтвеждения брони</p>
       <!-- форма -->
     </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>
+    <p class="footer__text">
       Барбершоп «Бородинский»<br>
       адрес: г. Санкт-Петербург, б. конюшенная, д. 19/8<br>
       <a href="#">как нас найти?</a><br>
@@ -102,7 +105,7 @@
     </p>
 
     <div>
-      <p>давайте дружить!</p>
+      <p class="footer__text">давайте дружить!</p>
       <ul>
         <li><a href="#" title="Вконтакте">Вконтакте</a></li>
         <li><a href="#" title="Фейсбук">Фейсбук</a></li>
@@ -111,23 +114,23 @@
     </div>
 
     <div>
-      <p>
+      <p class="footer__text">
         разработано:
-        <a href="#">html academy</a>
+        <a class="btn" href="#">html academy</a>
       </p>
     </div>
   </footer>
 
   <!-- Скрытые блоки (popup) -->
-  <section>
-    <h2>Личный кабинет</h2>
+  <section class="personal-account">
+    <h2 class="header">Личный кабинет</h2>
     <p>Введите свой логин и пароль:</p>
     <!-- Здесь будет форма -->
     <button type="button">Закрыть</button>
   </section>
 
-  <section>
-    <h2>Как до нас добраться</h2>
+  <section class="map-block">
+    <h2 class="header">Как до нас добраться</h2>
     <button type="button">Закрыть</button>
   </section>
 </body>
