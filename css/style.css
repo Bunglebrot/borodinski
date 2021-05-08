@@ -34,6 +34,8 @@ a {
 }
 
 ul {
+  padding: 0;
+
   list-style: none;
 }
 
@@ -46,6 +48,17 @@ button {
 }
 
 /* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.navigation__list {
+  display: flex;
+}
+
 .navigation__link {
   font-size: 16px;
 }
@@ -55,21 +68,43 @@ button {
 }
 
 /* ADVANTAGES */
+.main-block {
+  background-image: url('../img/bg-borodinski.jpg');
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.advantages__item + .advantages__item {
+  margin-left: 40px;
+}
+
 .advantages__header {
+  text-align: center;
   color: #f7f4f1;
 }
 
 .advantages__text {
+  text-align: center;
   color: #f7f4f1;
   font-weight: 700;
 }
 
 /* NEWS & GALLERY */
 .news {
+  flex-basis: 50%;
 
+  /* margin-left: 50px; */
 }
 
-.news .header {
+.news__list {
+  padding: 0;
+}
+
+.news .header-text {
   color: #000000;
 }
 
@@ -84,12 +119,23 @@ button {
   text-transform: lowercase;
 }
 
-.gallery .header {
+.gallery {
+  flex-basis: 50%;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery .header-text {
   color: #000000;
 }
 
 /* CONTACTS & FORM SECTION */
-.contacts .header {
+.contacts {
+  flex-basis: 50%;
+}
+
+.contacts .header-text {
   color: #000000;
 }
 
@@ -98,7 +144,12 @@ button {
   font-weight: 700;
 }
 
-.form-section .header {
+.form-section {
+  flex-basis: 50%;
+  margin-left: 100px;
+}
+
+.form-section .header-text {
   color: #000000;
 }
 
@@ -109,6 +160,10 @@ button {
 
 /* FOOTER */
 .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+
   background-color: #212121;
 }
 
@@ -118,6 +173,11 @@ button {
 }
 
 .wrapper_bg-light {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 50px;
+
   background-color: #ffffff;
 }
 
@@ -131,15 +191,16 @@ button {
 }
 
 /* TEXTS SIZES */
-.header {
+.header-text {
+  line-height: 42px;
   font-size: 30px;
 }
 
-.middle-header {
+.middle-header-text {
   font-size: 24px;
 }
 
-.small-header {
+.small-header-text {
   font-size: 20px;
 }
 
