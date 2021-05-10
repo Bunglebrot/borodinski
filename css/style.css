@@ -57,19 +57,65 @@ button {
 
 .navigation__list {
   display: flex;
+  margin: 0;
 }
 
 .navigation__link {
   font-size: 16px;
+
+  display: inline-block;
+  padding: 25px;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  background-color: #242424;
 }
 
 .header__btn-sign-in {
+  position: relative;
+
   font-size: 16px;
+
+  padding: 25px;
+  padding-left: 50px;
+
+  /* background-color: pink !important; */
+  border: none;
+}
+
+.header__btn-sign-in::before {
+  content: '';
+
+  position: absolute;
+  top: 28px;
+  left: 24px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url('../img/svg/login.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.header__btn-sign-in:hover::before,
+.header__btn-sign-in:focus::before,
+.header__btn-sign-in:active::before {
+  opacity: 1;
 }
 
 /* ADVANTAGES */
 .main-block {
+  padding-top: 70px;
   background-image: url('../img/bg-borodinski.jpg');
+}
+
+.big-logotype-image {
+  display: block;
+  margin: auto;
 }
 
 .advantages__list {
@@ -83,14 +129,36 @@ button {
 }
 
 .advantages__header {
+  position: relative;
+
   text-align: center;
   color: #f7f4f1;
+
+  margin-bottom: 60px;
+}
+
+.advantages__header::after {
+  content: '';
+
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
 }
 
 .advantages__text {
   text-align: center;
   color: #f7f4f1;
   font-weight: 700;
+
+  padding: 0 10px;
 }
 
 /* NEWS & GALLERY */
